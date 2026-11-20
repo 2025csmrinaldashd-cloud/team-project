@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [ ci-practical ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Display the text file
+        run: Get-Content message.txt
+
+      - name: Check file contains expected text
+        run: if (!(Select-String message.txt "Hello from CI/CD lab")) { exit 1 }
