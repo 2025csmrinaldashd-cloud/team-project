@@ -1,1 +1,1 @@
-Wrong CI message
+Hello from CI/CD lab
