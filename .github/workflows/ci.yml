@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ ci-practical ]
+    branches: [ci-practical]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -16,9 +16,10 @@ jobs:
 
       - name: Display the text file
         run: Get-Content message.txt
-            - name: Check file contains expected text
+
+      - name: Check file contains expected text
+        shell: pwsh
         run: |
           if (-not (Select-String -Path "message.txt" -Pattern "Hello from CI/CD lab" -Quiet)) {
             exit 1
-          }  
-
+          }
