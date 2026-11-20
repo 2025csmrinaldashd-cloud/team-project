@@ -1,2 +1,2 @@
-[![Python Tests](https://github.com/2025cs_mrinaldashd-cloud/team-project/actions/workflows/python-tests.yml/badge.svg?branch=python-build)](https://github.com/2025cs_mrinaldashd-cloud/team-project/actions/workflows/python-tests.yml)
+[![Python Tests](https://github.com/2025csmrinaldashd-cloud/team-project/actions/workflows/python-tests.yml/badge.svg?branch=python-build)](https://github.com/2025csmrinaldashd-cloud/team-project/actions/workflows/python-tests.yml)
 # team-project
