@@ -17,5 +17,5 @@ jobs:
       - name: Display the text file
         run: Get-Content message.txt
 
-      - name: Check file contains expected text
-        run: if (!(Select-String message.txt "Hello from CI/CD lab")) { exit 1 }
+            - name: Check file contains expected text
+        run: if (-not (Select-String -Path message.txt -Pattern "Hello from CI/CD lab" -Quiet)) { exit 1 }
